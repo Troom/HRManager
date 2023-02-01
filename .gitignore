@@ -1,0 +1,15 @@
+.vs/
+API/obj/
+Persistance/obj/
+HRManager/obj/
+HRManager/bin/
+HRManager.Persistence/obj/
+HRManager.Persistence/bin/
+HRManager.Application/obj/
+Domain/obj/
+HRManager.Application/bin/
+HRManager.Domain/obj/
+HRManager.API/bin/
+HRManager.API/obj/
+HRManager.API/appsettings.Development.json
+HRManager.Domain/bin/
