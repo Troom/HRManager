@@ -45,9 +45,13 @@ namespace HRManager
                 try
                 {
                     var context = scope.ServiceProvider.GetService<CompanyContext>();
-                    context.Database.EnsureDeleted();
-                    context.Database.Migrate();
-                    DbInitializer.Initialize(context);
+
+                    if (context.Database.IsRelational())
+                    {
+                        context.Database.EnsureDeleted();
+                        context.Database.Migrate();
+                        DbInitializer.Initialize(context);
+                    }
                 }
                 catch (Exception)
                 {

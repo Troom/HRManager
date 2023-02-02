@@ -5,11 +5,13 @@ using HRManager.Application.CompanyFeatures.Commands.Delete;
 using HRManager.Application.CompanyFeatures.Queries.Search;
 using HRManager.Domain.Model;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HRManager.API.Controllers
 {
     [ApiController]
+    [BasicAuthorization]
     [Route("[controller]/[Action]")]
     public class CompanyController : ControllerBase
     {
@@ -23,7 +25,7 @@ namespace HRManager.API.Controllers
             _context = context;
             _mediator = mediator;
         }
-        [BasicAuthorization]
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult> GetCompanies()
         {
@@ -37,14 +39,12 @@ namespace HRManager.API.Controllers
                 return StatusCode(StatusCodes.Status404NotFound);
             }
         }
-        [BasicAuthorization]
         [HttpPost]
         public async Task<ActionResult> CreateOld([FromBody] CreateCompanyCommand company)
         {
             var commandResult = await _mediator.Send(company);
             return Created("", commandResult);
         }
-        [BasicAuthorization]
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Company company)
         {
@@ -63,7 +63,6 @@ namespace HRManager.API.Controllers
             }
         }
 
-        [BasicAuthorization]
         [HttpPost]
         [ProducesResponseType(400)]
         [ProducesResponseType(200)]

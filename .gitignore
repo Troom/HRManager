@@ -13,3 +13,5 @@ HRManager.API/bin/
 HRManager.API/obj/
 HRManager.API/appsettings.Development.json
 HRManager.Domain/bin/
+HRManager.API.Tests/bin/
+HRManager.API.Tests/obj/

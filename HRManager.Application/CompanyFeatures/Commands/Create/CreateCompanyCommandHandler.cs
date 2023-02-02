@@ -1,4 +1,4 @@
-﻿using HRManager.API.Application.CompanyFeatures;
+﻿using HRManager.Application.CompanyFeatures;
 using HRManager.API.Persistence;
 using HRManager.Domain.Model;
 using MediatR;

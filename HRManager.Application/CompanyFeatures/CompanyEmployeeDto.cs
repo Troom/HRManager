@@ -1,4 +1,4 @@
-﻿namespace HRManager.API.Application.CompanyFeatures
+﻿namespace HRManager.Application.CompanyFeatures
 {
     public class CompanyEmployeeDto
     {

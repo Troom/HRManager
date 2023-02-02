@@ -5,11 +5,22 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRManager.API", "HRManager.API\HRManager.API.csproj", "{65761E99-751C-440B-B080-AE19596479E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRManager.Application", "HRManager.Application\HRManager.Application.csproj", "{9807E2C0-0768-4250-B4FE-1D9EAA072B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRManager.Application", "HRManager.Application\HRManager.Application.csproj", "{9807E2C0-0768-4250-B4FE-1D9EAA072B66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRManager.Domain", "HRManager.Domain\HRManager.Domain.csproj", "{DABD242E-15D3-4E1B-9AE2-CC711F6355C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRManager.Domain", "HRManager.Domain\HRManager.Domain.csproj", "{DABD242E-15D3-4E1B-9AE2-CC711F6355C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRManager.Persistence", "HRManager.Persistence\HRManager.Persistence.csproj", "{F51424DD-1D8E-4C37-A3D7-987B9568085F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRManager.Persistence", "HRManager.Persistence\HRManager.Persistence.csproj", "{F51424DD-1D8E-4C37-A3D7-987B9568085F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{673E058E-CAB5-4F7C-9B5B-A4CB0EB8677E}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{01039843-528F-4686-92C8-CA3750AE9D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRManager.Application.Tests", "HRManager.Application.Tests\HRManager.Application.Tests.csproj", "{84AECA09-AAD9-45B0-B837-27B4FA457F21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRManager.API.Tests", "HRManager.API.Tests\HRManager.API.Tests.csproj", "{BFFD09AE-7340-49CC-BD4A-6D21FB90978B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +44,21 @@ Global
 		{F51424DD-1D8E-4C37-A3D7-987B9568085F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F51424DD-1D8E-4C37-A3D7-987B9568085F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F51424DD-1D8E-4C37-A3D7-987B9568085F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84AECA09-AAD9-45B0-B837-27B4FA457F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84AECA09-AAD9-45B0-B837-27B4FA457F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84AECA09-AAD9-45B0-B837-27B4FA457F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84AECA09-AAD9-45B0-B837-27B4FA457F21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFD09AE-7340-49CC-BD4A-6D21FB90978B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFD09AE-7340-49CC-BD4A-6D21FB90978B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFD09AE-7340-49CC-BD4A-6D21FB90978B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFD09AE-7340-49CC-BD4A-6D21FB90978B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84AECA09-AAD9-45B0-B837-27B4FA457F21} = {01039843-528F-4686-92C8-CA3750AE9D15}
+		{BFFD09AE-7340-49CC-BD4A-6D21FB90978B} = {01039843-528F-4686-92C8-CA3750AE9D15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {192355AC-1007-4B33-BA63-2D9472E47DE7}

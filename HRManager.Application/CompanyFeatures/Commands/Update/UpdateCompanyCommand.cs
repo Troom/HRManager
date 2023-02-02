@@ -1,4 +1,4 @@
-﻿using HRManager.API.Application.CompanyFeatures;
+﻿using HRManager.Application.CompanyFeatures;
 using MediatR;
 
 namespace HRManager.Application.CompanyFeatures.Commands.Update
